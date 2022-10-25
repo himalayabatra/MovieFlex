@@ -27,19 +27,19 @@ Looking for a next movie or show? You are in the right place - Movieflex, get al
 - [IMDB Movie Data API - Top 250 Movies](https://imdb-api.com/en/API/Top250Movies/k_thj97up3)
 - [OMDB Movie Data API - Specific Movie Details](https://www.omdbapi.com/?apikey=c604051a&t=Batman)
 
-**Credits**
+**Credits:**
 - [IMDB API](https://imdb-api.com/)
 - [OMDB API](http://www.omdbapi.com/)
 ---
 
-### Scrum Roles
+### Scrum Roles:
 - Product Owner: Himalaya Batra
 - Scrum Master: Krunal Dilip Shigavan
 - Front-End Developer: Jaswanth Bathi 
 - DevOps Architect: Arunkumar Dubey
 - Integration Developer: Saurav Nandi
 
-### Weekly Meeting
+### Weekly Meeting:
 Tuesday 1:10 PM on Zoom
 [Meeting Link](https://us05web.zoom.us/j/86110908327?pwd=anlkTUU2VW9GS2hDa1FUNitvdWJRdz09)
 
