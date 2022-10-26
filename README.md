@@ -34,8 +34,7 @@ Movies & tv shows search data available & accessible
 
 **When** I search for "Christopher Nolan"
 
-**Then** I should receive a list of all the movies and tv shows with following attributes
-
+**Then** I should receive a list of all the movies and tv shows with following attributes \
 Movie or TV show name \
 Director name: \
 Total number of movies: (a number)
@@ -55,8 +54,7 @@ Total number of movies: (a number)
 
 **When** I search for "Comedy"
 
-**Then** I should receive a list of all the movies and tv shows with following attributes
-
+**Then** I should receive a list of all the movies and tv shows with following attributes \
 Movie or TV show name \
 Genre type \
 Total number of movies: (a number)
@@ -107,7 +105,7 @@ Movies & tv shows search data available & accessible
 
 **When** I filter the movie for year "2021"
 
-**Then** I should receive the list of movies and tv shows with the following attributes
+**Then** I should receive the list of movies and tv shows with the following attributes \
 Movie or TV show name \
 Release Year: (a number) \
 Total number of movies: (a number)
@@ -135,6 +133,7 @@ Movies & tv shows search data available & accessible
 **Given** a data source of movies & tv shows is available
 
 **When** I search for "Avengers"
+
 **Then** I should receive reviews with the following attributes \
 Total number of reviews: (a number) \
 Name of a user \
