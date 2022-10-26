@@ -30,9 +30,12 @@ Movies & tv shows search data available & accessible
 
 **Examples** \
 1.1 \
-**Given** a data source of movies & tv shows is available \
-**When** I search for "Christopher Nolan" \
-**Then** I should receive a list of all the movies and tv shows with following attributes \
+**Given** a data source of movies & tv shows is available 
+
+**When** I search for "Christopher Nolan"
+
+**Then** I should receive a list of all the movies and tv shows with following attributes
+
 Movie or TV show name \
 Director name: \
 Total number of movies: (a number)
@@ -46,16 +49,21 @@ Actor or Actress name \
 Total number of movies: (a number)
 
 1.3 \
-**Given** a data source of movies & tv shows is available \
-**When** I search for "Comedy" \
-**Then** I should receive a list of all the movies and tv shows with following attributes \
+**Given** a data source of movies & tv shows is available
+
+**When** I search for "Comedy"
+
+**Then** I should receive a list of all the movies and tv shows with following attributes
+
 Movie or TV show name \
 Genre type \
 Total number of movies: (a number)
 
 1.4 \
-**Given** a data source of movies & tv shows is available \
-**When** I search for any random value such as "7866HHHYHJ" \
+**Given** a data source of movies & tv shows is available
+
+**When** I search for any random value such as "7866HHHYHJ"
+
 **Then** I should receive zero results (empty list)
 
 ### Requirement 2: Display Details Of Certain Movies
@@ -67,8 +75,10 @@ Movies & tv shows search data available & accessible
 
 **Examples** \
 1.1 \
-**Given** a data source of movies & tv shows is available \
-**When** I search for "Batman" \
+**Given** a data source of movies & tv shows is available
+
+**When** I search for "Batman"
+
 **Then** I should receive list of all movies with following attributes \
 Title name \
 Plot details \
@@ -76,8 +86,10 @@ Cast details \
 Ratings: (a number)
 
 1.2 \
-**Given** a data source of movies & tv shows is available \
-**When** I search for any random value such as "GTFAGF98" \
+**Given** a data source of movies & tv shows is available
+
+**When** I search for any random value such as "GTFAGF98"
+
 **Then** I should receive zero results (empty list)
 
 ### Requirement 3: Filter Movies based on Release Year & Country
@@ -89,20 +101,24 @@ Movies & tv shows search data available & accessible
 
 **Examples** \
 1.1 \
-**Given** a data source of movies & tv shows is available \
-**When** I filter the movie for year "2021" \
-**Then** I should receive the list of movies and tv shows with the following attributes \
+**Given** a data source of movies & tv shows is available
+
+**When** I filter the movie for year "2021"
+
+**Then** I should receive the list of movies and tv shows with the following attributes
 Movie or TV show name \
 Release Year: (a number) \
 Total number of movies: (a number)
 
 **Examples** \
 1.2 \
-**Given** a data source of movies & tv shows is available \
-**When** I filter the movie for country "India" \
+**Given** a data source of movies & tv shows is available
+
+**When** I filter the movie for country "India"
+
 **Then** I should receive the list movies and tv shows with the following attributes \
 Movie or TV show name \
-Country \ 
+Country \
 Total number of movies: (a number)
 
 ### Requirement 4: Display public reviews for a specific movie and tv shows
@@ -114,8 +130,9 @@ Movies & tv shows search data available & accessible
 
 **Examples** \
 1.1 \
-**Given** a data source of movies & tv shows is available \
-**When** I search for "Avengers" \
+**Given** a data source of movies & tv shows is available
+
+**When** I search for "Avengers"
 **Then** I should receive reviews with the following attributes \
 Total number of reviews: (a number) \
 Name of a user \
@@ -123,16 +140,18 @@ Ratings: (a number)
 
 ### Requirement 5: Display Top movies and tv shows list
 **Scenario** \
-As a user interested in knowing current top trending movies, web series or TV shows. \
-I want to be able to fetch the list of current top 250 movies, web series or TV shows with their respective details.
+As a user interested in knowing current top trending movies, web series or TV shows\
+I want to be able to fetch the list of current top 250 movies, web series or TV shows with their respective details
 
 **Dependencies** \
 Movies & tv shows search data available & accessible
 
 **Examples** \
 1.1 \
-**Given** a data source of movies & tv shows is available \
-**When** I click on “Top 250 Movies” CTA in top navigation bar \
+**Given** a data source of movies & tv shows is available
+
+**When** I click on “Top 250 Movies” CTA in top navigation bar
+
 **Then** I should receive list of 250 movies with the following attributes (sample one movie attributes are shown below) \
       "Rank": "1", \
       "Title": "The Shawshank Redemption", \
@@ -143,8 +162,10 @@ Movies & tv shows search data available & accessible
       "IMDb Rating": "9.2",
       
 1.2 \
-**Given** a data source of movies & tv shows is available \
-**When** I click on “Top 250 TV shows” CTA in top navigation bar \
+**Given** a data source of movies & tv shows is available
+
+**When** I click on “Top 250 TV shows” CTA in top navigation bar
+
 **Then** I should receive list of TV shows with the following attributes (sample one TV show attributes are shown below) \
       “Rank ": "1", \
       "Title": "Planet Earth II", \
@@ -164,8 +185,10 @@ Movies & tv shows search data available & accessible
 
 **Examples** \
 1.1 \
-**Given** a data source of movies & tv shows is available \
-**When** I click on “Now Showing” CTA in top navigation bar \
+**Given** a data source of movies & tv shows is available
+
+**When** I click on “Now Showing” CTA in top navigation bar
+
 **Then** I should receive list of movies which are currently running in theatres with the following attributes (sample one movie attributes are shown below) \
       "Title": "Black Adam", \
       "Full Title": "Black Adam (2022)", \
