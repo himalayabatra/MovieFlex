@@ -6,7 +6,7 @@
 Looking for a next movie or show? You are in the right place - Movieflex, get all the information about the movies and TVshows with just one-click.
 **MOVIEFLEX** enables you with following:
 
-- Search movies/tv shows of different genre, cast, director
+- Search movies/TVshows of different genre, cast, director
 - Display the details of specific movie
 - Filter movies based Release Year & Country
 - Get public reviews for a specific movie/TVshows
@@ -21,7 +21,7 @@ Looking for a next movie or show? You are in the right place - Movieflex, get al
 ---
 
 ## Functional Requirements:
-### Requirement 1: Search movies & tv shows with preferred criteria
+### Requirement 1: Search movies & TVshows with preferred criteria
 **Scenario** \
 As a user interested in watching movies and tv shows of my choice, I want to search movies & TVshows based on different criteria.
 
