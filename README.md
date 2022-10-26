@@ -23,7 +23,7 @@ Looking for a next movie or show? You are in the right place - Movieflex, get al
 ## Functional Requirements:
 ### Requirement 1: Search movies & TVshows with preferred criteria
 **Scenario** \
-As a user interested in watching movies and tv shows of my choice, I want to search movies & TVshows based on different criteria.
+As a user interested in watching movies and TVshows of my choice, I want to search movies & TVshows based on different criteria.
 
 **Dependencies** \
 Movies & TVshows search data available & accessible
@@ -54,7 +54,7 @@ Total number of movies: (a number)
 
 **When** I search for "Comedy"
 
-**Then** I should receive a list of all the movies and tv shows with following attributes \
+**Then** I should receive a list of all the movies and TVshows with following attributes \
 Movie or TV show name \
 Genre type \
 Total number of movies: (a number)
