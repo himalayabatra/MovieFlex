@@ -3,7 +3,7 @@
 ---
 ## Introduction:
 
-Looking for a next movie or show? You are in the right place - Movieflex, get all the information about the movies and tvshows with just one-click.
+Looking for a next movie or show? You are in the right place - Movieflex, get all the information about the movies and TVshows with just one-click.
 **MOVIEFLEX** enables you with following:
 
 - Search movies/tv shows of different genre, cast, director
