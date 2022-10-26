@@ -41,8 +41,10 @@ Director name: \
 Total number of movies: (a number)
 
 1.2 \
-**Given** a data source of movies & tv shows is available \
-**When** I search for "Jim Carrey" \
+**Given** a data source of movies & tv shows is available
+
+**When** I search for "Jim Carrey"
+
 **Then** I should receive a list of all the movies and tv shows with following attributes \
 Movie or TV show name \
 Actor or Actress name \
@@ -178,7 +180,7 @@ Movies & tv shows search data available & accessible
 ### Requirement 6: Get list of current running movies in theatre
 **Scenario** \
 As a user interested in knowing current in theatres movies.\
-I want to be able to fetch the list of current in theatres movies with their respective details. \
+I want to be able to fetch the list of current in theatres movies with their respective details.
 
 **Dependencies** \
 Movies & tv shows search data available & accessible
