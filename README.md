@@ -199,7 +199,7 @@ Movies & tv shows search data available & accessible
       "Run Time in Minutes": "124", \
       "Plot": "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods-and imprisoned just as quickly-Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world." \
       "Directors": "Jaume Collet-Serra", \
-      "Stars": "Dwayne Johnson, Aldis Hodge, Pierce Brosnan, Noah Centineo" \
+      "Stars": "Dwayne Johnson, Aldis Hodge, Pierce Brosnan, Noah Centineo"
       
 ---
 
