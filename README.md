@@ -15,7 +15,6 @@ Looking for a next movie or show? You are in the right place - Movieflex, get al
 ---
 ## Logo:
 ![movieFlexLogo](https://user-images.githubusercontent.com/10191554/198113098-e540c38a-4f0b-4f4f-9dba-bfa88cd01376.jpg)
-)
 ---
 ## Storyboard:
 ![Home Page](https://user-images.githubusercontent.com/77502128/197637639-5844fdfb-be6c-4e17-a0ba-c63b94f6be9b.png)
