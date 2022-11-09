@@ -9,19 +9,21 @@
 <div class="text-center">
     <h1 class="display-4">Top 250 Movies</h1>
     <p>List of top 250 movies.</p>
-    <table>
+    <table class="table table-dark table-striped">
         <tr>
             <th>Title</th>
             <th>Release Year</th>
             <th>Rating</th>
+            <th>Poster</th>
         </tr>
         @{
             foreach (Item item in movies.Items)
             {
                 <tr>
+                    <td><img src="@item.Image" width="100" height="100"></td>
                     <td>@item.Title</td>
                     <td>@item.Year</td>
-                    <td>@item.ImDbRating</td>
+                    <td>@item.ImDbRating</td>                
             </tr>
             }
         }
