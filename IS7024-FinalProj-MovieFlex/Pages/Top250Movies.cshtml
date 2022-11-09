@@ -1,10 +1,30 @@
 ﻿@page
 @model IS7024_FinalProj_MovieFlex.Pages.Top250MoviesModel
+@using Movie
 @{
-	ViewData["Title"] = "Top 250 Movies";
+    ViewData["Title"] = "Top 250 Movies";
+    MovieList movies = (MovieList)ViewData["Movies"];
 }
 
 <div class="text-center">
     <h1 class="display-4">Top 250 Movies</h1>
-    <p>List of top 250 movies</a>.</p>
+    <p>List of top 250 movies.</p>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Release Year</th>
+            <th>Rating</th>
+        </tr>
+        @{
+            foreach (Item item in movies.Items)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Year</td>
+                    <td>@item.ImDbRating</td>
+            </tr>
+            }
+        }
+    </table>
 </div>
+
