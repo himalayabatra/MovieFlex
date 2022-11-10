@@ -21,7 +21,7 @@ namespace IS7024_FinalProj_MovieFlex.Pages
         public void OnGet()
         {
             ShowResults = false;
-            SearchResult searchResults = new SearchResult();
+            SearchResult searchResults = new();
             if (string.IsNullOrEmpty(searchString)) return;
 
             
