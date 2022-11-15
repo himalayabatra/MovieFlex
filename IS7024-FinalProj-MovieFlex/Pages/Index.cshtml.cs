@@ -7,7 +7,7 @@ namespace IS7024_FinalProj_MovieFlex.Pages
 {
     public class IndexModel : PageModel
     {
-        static readonly HttpClient client = new HttpClient();
+        static readonly HttpClient client = new();
         private readonly ILogger<IndexModel> _logger;
 
         [BindProperty(SupportsGet = true)]
