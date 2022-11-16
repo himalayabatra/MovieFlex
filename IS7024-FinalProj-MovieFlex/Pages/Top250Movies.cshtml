@@ -5,13 +5,16 @@
     ViewData["Title"] = "Top 250 Movies";
     MovieList movies = (MovieList)ViewData["Movies"];
 }
-
 <div class="text-center">
     <h1 class="display-4">Top 250 Movies</h1>
     <p>List of top 250 movies.</p>
+
+    
+@if(movies.Items.Count >0){
     <table class="table table-dark table-striped">
         <tr>
             <th>Title</th>
+            <th>Ranking</th>
             <th>Release Year</th>
             <th>Rating</th>
             <th>Poster</th>
@@ -19,14 +22,21 @@
         @{
             foreach (Item item in movies.Items)
             {
-                <tr>
-                    <td><img src="@item.Image" width="100" height="100"></td>
-                    <td>@item.Title</td>
-                    <td>@item.Year</td>
-                    <td>@item.ImDbRating</td>                
-            </tr>
+                        <tr>
+                            <td><img src="@item.Image" width="100" height="100"></td>
+                            <td>@item.Rank</td>
+                            <td>@item.Title</td>
+                            <td>@item.Year</td>
+                            <td>@item.ImDbRating</td>  
+                    </tr>
             }
         }
     </table>
+    }
+    else
+    {
+        <h6 style="margin-top:9%; margin-bottom:10%">There was an error hitting the API. Please reload the page again!</h6>
+    }
 </div>
+
 
