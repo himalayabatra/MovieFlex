@@ -20,27 +20,7 @@
         
      }
 
-        #slider {
-            position: relative;
-            width: 50%;
-            height: 32vw;
-            margin: 150px auto;
-            font-family: 'Helvetica Neue', sans-serif;
-            perspective: 1400px;
-            transform-style: preserve-3d;
-        }
-
-        input[type=radio] {
-            position: relative;
-            top: 108%;
-            left: 50%;
-            width: 18px;
-            height: 18px;
-            margin: 0 15px 0 0;
-            opacity: 0.4;
-            transform: translateX(-83px);
-            cursor: pointer;
-        }
+      
 
         .table {
 
@@ -54,121 +34,109 @@
                 opacity: 1;
             }
 
-        #slider label,
-        #slider label img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            color: white;
-            font-size: 70px;
-            font-weight: bold;
-            border-radius: 3px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: transform 400ms ease;
-        }
 
-        #s1:checked ~ #slide1,
-        #s2:checked ~ #slide2,
-        #s3:checked ~ #slide3,
-        #s4:checked ~ #slide4,
-        #s5:checked ~ #slide5,
-        #s6:checked ~ #slide6,
-        #s7:checked ~ #slide7,
-        #s8:checked ~ #slide8,
-        #s9:checked ~ #slide9,
-        #s10:checked ~ #slide10
-        {
-            box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
-            transform: translate3d(0%, 0, 0px);
-        }
-        
-        #s1:checked ~ #slide2,
-        #s2:checked ~ #slide3,
-        #s3:checked ~ #slide4,
-        #s4:checked ~ #slide5,
-        #s5:checked ~ #slide6,
-        #s6:checked ~ #slide7,
-        #s7:checked ~ #slide8,
-        #s8:checked ~ #slide9,
-        #s9:checked ~ #slide10,
-        #s10:checked ~ #slide1 {
-            box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-            transform: translate3d(20%, 0, -100px);
-        }
-
-        #s1:checked ~ #slide3,
-        #s2:checked ~ #slide4,
-        #s3:checked ~ #slide5,
-        #s4:checked ~ #slide6,
-        #s5:checked ~ #slide7,
-        #s6:checked ~ #slide8,
-        #s7:checked ~ #slide9,
-        #s8:checked ~ #slide10,
-        #s9:checked ~ #slide1,
-        #s10:checked ~ #slide2 {
-            box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-            transform: translate3d(40%, 0, -250px);
-        }
-
-        #s1:checked ~ #slide4,
-        #s2:checked ~ #slide5,
-        #s3:checked ~ #slide6,
-        #s4:checked ~ #slide7,
-        #s5:checked ~ #slide8
-        #s6:checked ~ #slide9,
-        #s7:checked ~ #slide10,
-        #s8:checked ~ #slide1,
-        #s9:checked ~ #slide2,
-        #s10:checked ~ #slide3 {
-            box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-            transform: translate3d(-20%, 0, -100px);
-        }
-
-        #s1:checked ~ #slide5,
-        #s2:checked ~ #slide6,
-        #s3:checked ~ #slide7,
-        #s4:checked ~ #slide8,
-        #s5:checked ~ #slide9,
-        #s6:checked ~ #slide10,
-        #s7:checked ~ #slide1,
-        #s8:checked ~ #slide2,
-        #s9:checked ~ #slide3,
-        #s10:checked ~ #slide4 {
-            box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-            transform: translate3d(-40%, 0, -250px);
-        }
             </style>
 </head>
 <body>
     <h1>Now Showing</h1>
-    
-    <section id="slider">
-        <input type="radio" name="slider" id="s1" checked>
-        <label for="s1" id="slide1"><img src="https://s3.amazonaws.com/sfc-datebook-wordpress/wp-content/uploads/sites/2/2022/10/MER172218813404e8465b4b59574455a_blackadam1020-scaled.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s2">
-        <label for="s2" id="slide2"><img src="https://upload.wikimedia.org/wikipedia/en/4/44/One_Piece_Film_Red_Visual_Poster.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s3">
-        <label for="s3" id="slide3"><img src="https://dx35vtwkllhj9.cloudfront.net/universalstudios/ticket-to-paradise/images/regions/us/updates/header.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s4">
-        <label for="s4" id="slide4"><img src="https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2022/09/SMILE.jpeg?ssl=1" alt=""></label>
-        <input type="radio" name="slider" id="s5">
-        <label for="s5" id="slide5"><img src="https://assets-prd.ignimgs.com/2022/07/14/prey-for-the-devil-button-1-1657822607082.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s6">
-        <label for="s6" id="slide6"><img src="https://i0.wp.com/www.irishfilmcritic.com/wp-content/uploads/2022/06/Lyle-Lyle-Crocodile-1.jpg?fit=1392%2C696&ssl=1" alt=""></label>
-        <input type="radio" name="slider" id="s7">
-        <label for="s7" id="slide7"><img src="https://pics.filmaffinity.com/The_Banshees_of_Inisherin-610526202-large.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s8">
-        <label for="s8" id="slide8"><img src="https://d9u7mg5dz9s9d.cloudfront.net/586977/uploads/3b76dd30-44ad-11ed-9753-0705b592c2ad_1200_630.png" alt=""></label>
-        <input type="radio" name="slider" id="s9">
-        <label for="s9" id="slide9"><img src="https://static.metacritic.com/images/products/movies/8/906e5b156d2b22291ddc3060fd0fb80e.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s10">
-        <label for="s10" id="slide10"><img src="https://crypticrock.com/wp-content/uploads/2022/10/terrifer-2-slide.jpg" alt=""></label>
-    </section>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <style>
+                h5 {
+                    color: black
+                }
+            </style>
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm col-xs-12">
+                            <div class="card">
+                                <img src="https://s3.amazonaws.com/sfc-datebook-wordpress/wp-content/uploads/sites/2/2022/10/MER172218813404e8465b4b59574455a_blackadam1020-scaled.jpg" width="100%" height="225" />
+                            </div>
+                        </div>
+                        <div class="col-sm col-xs-12">
+                            <div class="card">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/4/44/One_Piece_Film_Red_Visual_Poster.jpg" width="100%" height="225" />
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm col-xs-12">
+                            <div class="card">
+                                <img src="https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2022/09/SMILE.jpeg?ssl=1" width="100%" height="225" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm col-xs-12">
+                            <div class="card">
+                                <img src="https://assets-prd.ignimgs.com/2022/07/14/prey-for-the-devil-button-1-1657822607082.jpg" width="100%" height="225" />
+                            </div>
+                        </div>
+                        <div class="col-sm col-xs-12">
+                            <div class="card">
+                                <img src="https://i0.wp.com/www.irishfilmcritic.com/wp-content/uploads/2022/06/Lyle-Lyle-Crocodile-1.jpg?fit=1392%2C696&ssl=1" width="100%" height="225" />
+
+                            </div>
+                        </div>
+                        <div class="col-sm col-xs-12">
+                            <div class="card">
+                                <img src="https://pics.filmaffinity.com/The_Banshees_of_Inisherin-610526202-large.jpg" width="100%" height="225" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm col-xs-12">
+                            <div class="card">
+                                <img src="https://static.metacritic.com/images/products/movies/8/906e5b156d2b22291ddc3060fd0fb80e.jpg" width="100%" height="225" />
+
+                            </div>
+                        </div>
+                        <div class="col-sm col-xs-12">
+                            <div class="card">
+                                <img src="https://crypticrock.com/wp-content/uploads/2022/10/terrifer-2-slide.jpg" width="100%" height="225" />
+
+                            </div>
+                        </div>
+                        <div class="col-sm col-xs-12">
+                            <div class="card">
+                                <img src="https://dx35vtwkllhj9.cloudfront.net/universalstudios/ticket-to-paradise/images/regions/us/updates/header.jpg" width="100%" height="225" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <div class= "table">
     <table class="table table-hover">
     <tr>
