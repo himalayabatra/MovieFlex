@@ -9,7 +9,7 @@
     }
 </style>
 <div class="sub-pages-header mb-3">
-    <h1>Contact us</h1>
+    <center><h1>Contact us</h1></center>
 
 </div>
 <!--Section: Contact-->
@@ -18,61 +18,24 @@
         Do you have any questions? Please send in your query here.
         Our team will get back to you within a matter of hours to help you.
     </p>
-    <div class="row">
-        <p>Please fill below details</p>
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="" method="POST">
+    <form method="get">
+        <center><h1>Please fill out the details</h1></center>
+        <center>
+            Name:<input type=text name="fullName" size=20 maxlength=10> <br><br />
+            Emailid:<input type=text name="address" size=20 maxlength=100><br><br />
+            Contact:<input type=text name="contact" size=20 maxlength=10> <br><br />
 
-                <!--Grid row-->
-                <div class="row">
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
 
-                </div>
-                <!--Grid row-->
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-                <!--Grid row-->
-                <div class="row">
 
-                    <!--Grid column-->
-                    <div class="col-md-12">
+<textarea id="message" name="message" rows="4" cols="40">
+Message.
+</textarea> <br>
 
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
+            <center />
+        </center>
 
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-            <br />
+    </form>
             <div class="text-center text-md-left">
                 <a class="btn btn-primary mb-3" style="background-color: #171D22;
             border-color: #eb1424;
