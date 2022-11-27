@@ -9,8 +9,15 @@ namespace IS7024_FinalProj_MovieFlex.Pages
         static readonly HttpClient client = new HttpClient();
         public void OnGet()
         {
-           var task = client.GetAsync("https://imdb-api.com/en/API/Top250Movies/k_thj97up3");
-            HttpResponseMessage result =  task.Result;
+           
+            ViewData["Movies"] = httpCall();
+            
+        }
+
+        public MovieList httpCall()
+        {
+            var task = client.GetAsync("https://imdb-api.com/en/API/Top250Movies/k_thj97up3");
+            HttpResponseMessage result = task.Result;
             ////List<MovieList> movies = new List<MovieList>();
             MovieList movies = new MovieList();
             if (result.IsSuccessStatusCode)
@@ -19,7 +26,7 @@ namespace IS7024_FinalProj_MovieFlex.Pages
                 string jsonString = readString.Result;
                 movies = MovieList.FromJson(jsonString);
             }
-            ViewData["Movies"] = movies;
+            return movies;
         }
     }
 }

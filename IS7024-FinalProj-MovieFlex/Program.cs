@@ -1,3 +1,7 @@
+using Newtonsoft.Json;
+using IS7024_FinalProj_MovieFlex.Pages;
+using Movie;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,5 +25,14 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+app.MapGet("/movieFlex/top250movies",() =>
+{
+    Top250MoviesModel top250Movies = new Top250MoviesModel();
+    MovieList movies = new MovieList();
+        movies = top250Movies.httpCall();
+    return movies;
+})
+.WithName("api");
 
 app.Run();
