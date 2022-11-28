@@ -1,32 +1,39 @@
+using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Movie;
+using OmdbList;
 
 namespace IS7024_FinalProj_MovieFlex.Pages
 {
     public class Top250MoviesModel : PageModel
     {
         static readonly HttpClient client = new HttpClient();
-        public void OnGet()
+        public async Task OnGetAsync()
         {
-           
-            ViewData["Movies"] = httpCall();
+            
+            MovieList movies = await GetMovie();
+            ViewData["MovieList"] = movies;
             
         }
 
-        public MovieList httpCall()
+        private async Task<MovieList> GetMovie()
         {
-            var task = client.GetAsync("https://imdb-api.com/en/API/Top250Movies/k_thj97up3");
-            HttpResponseMessage result = task.Result;
-            ////List<MovieList> movies = new List<MovieList>();
+
+            HttpRequestMessage request = new HttpRequestMessage();
+            request.RequestUri = new Uri("https://imdb-api.com/en/API/Top250Movies/k_thj97up3");
+            request.Method = HttpMethod.Get;
+            HttpResponseMessage response = await client.SendAsync(request);
             MovieList movies = new MovieList();
-            if (result.IsSuccessStatusCode)
+            if (response.IsSuccessStatusCode)
             {
-                Task<string> readString = result.Content.ReadAsStringAsync();
+                Task<string> readString = response.Content.ReadAsStringAsync();
                 string jsonString = readString.Result;
                 movies = MovieList.FromJson(jsonString);
             }
+
             return movies;
         }
+        
+        }
     }
-}

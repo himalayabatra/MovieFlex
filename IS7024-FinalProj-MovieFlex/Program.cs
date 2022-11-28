@@ -30,7 +30,7 @@ app.MapGet("/movieFlex/top250movies",() =>
 {
     Top250MoviesModel top250Movies = new Top250MoviesModel();
     MovieList movies = new MovieList();
-        movies = top250Movies.httpCall();
+        //movies = top250Movies.httpCall();
     return movies;
 })
 .WithName("api");
