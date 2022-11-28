@@ -7,14 +7,26 @@
     form {
         background: none !important;
     }
+    .contact-info-text{
+        color:#171D22; padding:20px 0; font-size: 20px;
+    }
+    .contact-submit-btn {
+        background-color: #171D22;
+            padding:20px 30px;
+    }
+    .address-info {
+        background-color: #ffffff;
+        color:black;
+        font-weight: bold;
+        padding:20px;
+    }
 </style>
-<div class="sub-pages-header mb-3">
-    <h1>Contact us</h1>
+<div class="container">
+    <h1 class="sub-heading">Contact us</h1>
 
-</div>
 <!--Section: Contact-->
 <section class="mb-4">
-    <p class="text-center w-responsive mx-auto mb-5" style="color:#eb1424; padding:20px 0; font-size: 20px;">
+    <p class="text-center w-responsive mx-auto mb-5 contact-info-text">
         Do you have any questions? Please send in your query here.
         Our team will get back to you within a matter of hours to help you.
     </p>
@@ -72,17 +84,14 @@
                 <!--Grid row-->
 
             </form>
-            <br />
             <div class="text-center text-md-left">
-                <a class="btn btn-primary mb-3" style="background-color: #171D22;
-            border-color: #eb1424;
-            padding:20px 30px;" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <a class="btn btn-primary mb-3 contact-submit-btn" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
             <div class="status"></div>
         </div>
         <!--Grid column-->
         <!--Grid column-->
-        <div class="col-md-3 text-center">
+        <div class="col-md-3 text-center address-info">
             <ul class="list-unstyled mb-0">
                 <li>
                     <i class="bi bi-building"></i>
@@ -105,3 +114,4 @@
     </div>
 
 </section>
+</div>

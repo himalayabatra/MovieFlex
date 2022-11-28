@@ -16,7 +16,7 @@ namespace IS7024_FinalProj_MovieFlex.Pages
 
         public MovieList httpCall()
         {
-            var task = client.GetAsync("https://imdb-api.com/en/API/Top250Movies/k_thj97up3");
+            var task = client.GetAsync("https://imdb-api.com/en/API/Top250Movies/k_u9ihqpx1");
             HttpResponseMessage result = task.Result;
             ////List<MovieList> movies = new List<MovieList>();
             MovieList movies = new MovieList();

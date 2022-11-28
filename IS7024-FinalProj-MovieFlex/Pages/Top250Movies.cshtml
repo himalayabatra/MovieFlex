@@ -6,25 +6,25 @@
     MovieList movies = (MovieList)ViewData["Movies"];
 }
 
-<div class="text-center">
-    <h1 class="display-4">Top 250 Movies</h1>
-    <p>List of top 250 movies.</p>
-    <table class="table table-dark table-striped">
+
+<div class="text-center container">
+    <h1 class="sub-heading">List of top 250 movies.</h1>
+    <table id="movie-datatable" class="table table-dark table-striped table-responsive">
         <tr>
-            <th>Title</th>
+            <th></th>
+            <th class="align-initial">Rank & Title</th>
             <th>Release Year</th>
             <th>Rating</th>
-            <th>Poster</th>
         </tr>
         @{
             foreach (Item item in movies.Items)
             {
-                <tr>
-                    <td><img src="@item.Image" width="100" height="100"></td>
-                    <td>@item.Title</td>
-                    <td>@item.Year</td>
-                    <td>@item.ImDbRating</td>                
-            </tr>
+                                        <tr>
+                        <td><img src="@item.Image" width="100" height="100" /></td>
+                        <td class="align-initial"><span>@item.Rank . </span>@item.Title</td>
+                                            <td>@item.Year</td>
+                                            <td>@item.ImDbRating</td>                
+                                    </tr>
             }
         }
     </table>

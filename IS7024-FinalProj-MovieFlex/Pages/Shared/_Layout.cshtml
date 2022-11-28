@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - IS7024_FinalProj_MovieFlex</title>
+    <title>@ViewData["Title"] - MovieFlex</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/IS7024_FinalProj_MovieFlex.styles.css" asp-append-version="true" />
-
 </head>
 <body>
     <header>
         <div class="container">
             <div class="row">
-                <div class="logo-text col-sm-2">
+                <div class="logo-text col-md-2 col-sm-2 d-none d-md-block d-sm-none">
                     <a asp-page="/Index"> <img src="/images/Logo.png" width="200" height="100"/></a>
                 </div>
-                <nav class="navbar navbar-expand-sm navbar-toggleable-sm ml-auto col-sm-10">
-                    <div class="container">
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm ml-auto col-md-10 col-sm-2">
+                    <div class="container-fluid">
+                        <a asp-page="/Index" class="d-sm-block d-md-none"> <img src="/images/Logo.png" width="150" height="90" /></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
