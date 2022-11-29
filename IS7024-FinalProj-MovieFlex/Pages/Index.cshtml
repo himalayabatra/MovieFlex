@@ -5,30 +5,12 @@
     ViewData["Title"] = "Home page";
     List<Result> searchResults = (List<Result>) ViewData["searchResult"];
 }
-
-<style>
-    .movie-card {
-        display:inline-block;
-        margin: 10px;
-        border-radius:16px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-    }
-
-        .movie-card .movie-img-container {
-            overflow: hidden;
-    }
-    .movie-card-img:hover {
-        transform: scale(1.2);
-        transition: transform 0.4s ease-in-out;
-    }
-</style>
 <div class="text-center">
     <div class="bannerContainer">
         <div class="container">
-            <form action="" method="get" class="searchBox">
-                <input asp-for="searchString" type="text" placeholder="Search Movies" />
-                <input type="submit" value="Search" class="submitBtn" />
+            <form action="" method="get" class="searchBox" role="search">
+                <input asp-for="searchString" type="text" placeholder="Search Movies" aria-placeholder="Search Movies" />
+                <input type="submit" value="Search" class="submitBtn" aria-label="search" aria-description="search results will appear below" />
             </form> 
         </div>
     </div>
@@ -43,8 +25,8 @@
                     {
                     @if ((@movie.Image != null))
                     {
-                        <div class="card movie-card" style="width: 18rem; height:32rem;">
-                            <div class="movie-img-container"><img src = "@movie.Image" class="card-img-top movie-card-img" alt="image of @movie.Title" style="width: 18rem; height:20rem;"></div>
+                        <div class="card movie-card">
+                            <div class="movie-img-container"><img src = "@movie.Image" class="card-img-top movie-card-img" alt="image of @movie.Title"></div>
                             <div class="card-body">
                                 <h2>@movie.Title</h2>
                                 @movie.Description

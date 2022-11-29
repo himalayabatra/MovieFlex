@@ -41,29 +41,6 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-    
-   @* <section id="slider">
-        <input type="radio" name="slider" id="s1" checked>
-        <label for="s1" id="slide1"><img src="https://s3.amazonaws.com/sfc-datebook-wordpress/wp-content/uploads/sites/2/2022/10/MER172218813404e8465b4b59574455a_blackadam1020-scaled.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s2">
-        <label for="s2" id="slide2"><img src="https://upload.wikimedia.org/wikipedia/en/4/44/One_Piece_Film_Red_Visual_Poster.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s3">
-        <label for="s3" id="slide3"><img src="https://dx35vtwkllhj9.cloudfront.net/universalstudios/ticket-to-paradise/images/regions/us/updates/header.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s4">
-        <label for="s4" id="slide4"><img src="https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2022/09/SMILE.jpeg?ssl=1" alt=""></label>
-        <input type="radio" name="slider" id="s5">
-        <label for="s5" id="slide5"><img src="https://assets-prd.ignimgs.com/2022/07/14/prey-for-the-devil-button-1-1657822607082.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s6">
-        <label for="s6" id="slide6"><img src="https://i0.wp.com/www.irishfilmcritic.com/wp-content/uploads/2022/06/Lyle-Lyle-Crocodile-1.jpg?fit=1392%2C696&ssl=1" alt=""></label>
-        <input type="radio" name="slider" id="s7">
-        <label for="s7" id="slide7"><img src="https://pics.filmaffinity.com/The_Banshees_of_Inisherin-610526202-large.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s8">
-        <label for="s8" id="slide8"><img src="https://d9u7mg5dz9s9d.cloudfront.net/586977/uploads/3b76dd30-44ad-11ed-9753-0705b592c2ad_1200_630.png" alt=""></label>
-        <input type="radio" name="slider" id="s9">
-        <label for="s9" id="slide9"><img src="https://static.metacritic.com/images/products/movies/8/906e5b156d2b22291ddc3060fd0fb80e.jpg" alt=""></label>
-        <input type="radio" name="slider" id="s10">
-        <label for="s10" id="slide10"><img src="https://crypticrock.com/wp-content/uploads/2022/10/terrifer-2-slide.jpg" alt=""></label>
-    </section>*@
 <div class="container">
 
     <h1 class="sub-heading">Now Showing</h1>
@@ -71,8 +48,8 @@
 
         foreach (Item item in movielist.Items)
         {
-                   <div class="card movie-card" style="width: 18rem; height:32rem;">
-                <div class="movie-img-container"><img src="@item.Image" class="card-img-top movie-card-img" alt="image of @item.Title" style="width: 18rem; height:20rem;"></div>
+                   <div class="card movie-card">
+                <div class="movie-img-container"><img src="@item.Image" class="card-img-top movie-card-img" alt="image of @item.Title" /></div>
                             <div class="card-body">
                                 <h2>@item.Title</h2>
                     Gross: @item.Gross <br />
