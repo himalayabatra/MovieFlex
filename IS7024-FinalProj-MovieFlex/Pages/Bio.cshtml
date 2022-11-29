@@ -1,0 +1,30 @@
+﻿@page
+@model IS7024_FinalProj_MovieFlex.Pages.BioModel
+@using External
+@{
+    ViewData["Title"] = "External API"; ExternalApi data = (ExternalApi)ViewData["ExternalAPI"];
+}
+
+<div class="text-center">   
+    <h1 class="display-4">Documentary </h1> 
+    <table class="table table-dark table-striped">       
+        <tr>            
+            <th>Genre</th>   
+            <th>Title</th> 
+            <th>Produced By</th>
+            <th>Release Date</th>
+        </tr>       
+        @{
+            foreach (Result result in data.Results)
+            {
+                                <tr>   
+                                <td>@result.Section</td>           
+                                <td>@result.Title</td>    
+                                <td>@result.Byline</td>
+                                <td>@result.CreatedDate</td>
+                                </tr>
+            }
+        }   
+        </table>   
+        </div>
+
