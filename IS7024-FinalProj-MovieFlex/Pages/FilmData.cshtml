@@ -1,0 +1,50 @@
+﻿@page
+@model IS7024_FinalProj_MovieFlex.Pages.MoviesModel
+@using MovieJoin
+@using Join
+@{
+    ViewData["Title"] = "MovieFlex Moviedemo";
+    MovieDemo moviedemos = (MovieDemo)ViewData["moviedemos"];
+    DataJoin data = (DataJoin)ViewData["JoinData"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">Batman Movies</h1>
+    <br />
+    <table class="table table-dark table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Director</th>
+
+        </tr>
+        @{
+            foreach (Result status in moviedemos.Results)
+            {
+                <tr>
+
+                    <td>@status.DisplayTitle</td>
+                    <td>@status.Byline</td>
+
+                </tr>
+            }
+        }
+    </table>
+    <table class="table table-dark table-striped">
+    <tr>
+            <th>Title</th>
+            <th>Description</th>
+
+        </tr>
+        @{
+            foreach (Result1 status1 in data.Results)
+            {
+                <tr>
+
+                    <td>@status1.Title</td>
+                    <td>@status1.Description</td>
+
+                </tr>
+            }
+        }
+    </table>
+</div>
