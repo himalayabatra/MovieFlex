@@ -9,7 +9,7 @@ namespace IS7024_FinalProj_MovieFlex.Pages
         static readonly HttpClient client= new HttpClient();
         public void OnGet()
         {
-            var task = client.GetAsync("https://imdb-api.com/en/API/Top250TVs/k_u9ihqpx1");
+            var task = client.GetAsync("https://imdb-api.com/en/API/Top250TVs/k_dr1ok248");
             HttpResponseMessage result = task.Result;
             Tvshows tvshows = new Tvshows();
             if (result.IsSuccessStatusCode)

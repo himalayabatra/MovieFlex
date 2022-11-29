@@ -14,7 +14,7 @@ namespace IS7024_FinalProj_MovieFlex.Pages
         public void OnGet()
         {
 
-            var task = client.GetAsync("https://imdb-api.com/en/API/BoxOffice/k_u9ihqpx1");
+            var task = client.GetAsync("https://imdb-api.com/en/API/BoxOffice/k_dr1ok248");
             HttpResponseMessage result = task.Result;
             ShowingMovies Show_movie_list = new ShowingMovies();
             if (result.IsSuccessStatusCode)

@@ -23,7 +23,7 @@ namespace IS7024_FinalProj_MovieFlex.Pages
             if (!string.IsNullOrEmpty(searchString))
             {
                 SearchCompleted = true;
-                var httpTask = client.GetAsync("https://imdb-api.com/en/API/Search/k_u9ihqpx1/" + searchString);
+                var httpTask = client.GetAsync("https://imdb-api.com/en/API/Search/k_dr1ok248/" + searchString);
                 HttpResponseMessage httpTaskResult = httpTask.Result;
                 SearchResult searchResults = new SearchResult();
                 if (httpTaskResult.IsSuccessStatusCode)

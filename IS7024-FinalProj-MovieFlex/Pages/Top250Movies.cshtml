@@ -23,12 +23,16 @@
         @{
             foreach (Item item in movies.Items)
             {
-                                        <tr>
-                        <td><img src="@item.Image" width="100" height="100" alt="poster of @item.Title" /></td>
-                        <td class="align-initial"><span>@item.Rank . </span>@item.Title</td>
-                                            <td>@item.Year</td>
-                                            <td>@item.ImDbRating</td>                
-                                    </tr>
+                <tr>
+                    <td>
+                        <img src="@item.Image" width="100" height="100" alt="poster of @item.Title" />
+                    </td>
+                    <td class="align-initial">
+                        <span>@item.Rank . </span>@item.Title
+                    </td>
+                    <td>@item.Year</td>
+                    <td>@item.ImDbRating</td>                
+                </tr>
             }
         }
         </tbody>

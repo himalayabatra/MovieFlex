@@ -10,8 +10,6 @@ namespace IS7024_FinalProj_MovieFlex.Pages
         static readonly HttpClient client = new HttpClient();
         public void OnGet()
         {
-
-
             var task = client.GetAsync("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=Batman&api-key=15eEBZbWGGBOuqWJ2IV9ErRmx9q8ZqXj");
             HttpResponseMessage result = task.Result;
             MovieDemo moviedemos = new MovieDemo();
@@ -23,7 +21,7 @@ namespace IS7024_FinalProj_MovieFlex.Pages
             }
             ViewData["moviedemos"] = moviedemos;
 
-            var task1 = client.GetAsync("https://imdb-api.com/en/API/SearchMovie/k_thj97up3/batman");
+            var task1 = client.GetAsync("https://imdb-api.com/en/API/SearchMovie/k_dr1ok248/batman");
             HttpResponseMessage result2 = task1.Result;
             DataJoin data = new DataJoin();
             if (result.IsSuccessStatusCode)
