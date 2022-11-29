@@ -192,3 +192,25 @@ header .nav-item a {
 .align-initial {
     text-align: initial;
 }
+
+#contact-form  {
+    background: none !important;
+}
+
+.contact-info-text {
+    color: #171D22;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.contact-submit-btn {
+    background-color: #171D22;
+    padding: 20px 30px;
+}
+
+.address-info {
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+}

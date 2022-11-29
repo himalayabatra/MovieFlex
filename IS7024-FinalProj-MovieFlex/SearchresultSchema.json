@@ -1,0 +1,76 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/SearchResult",
+  "definitions": {
+    "SearchResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "searchType": {
+          "$ref": "#/definitions/Type"
+        },
+        "expression": {
+          "type": "string"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Result"
+          }
+        },
+        "errorMessage": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "errorMessage",
+        "expression",
+        "results",
+        "searchType"
+      ],
+      "title": "SearchResult"
+    },
+    "Result": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "resultType": {
+          "$ref": "#/definitions/Type"
+        },
+        "image": {
+          "type": "string",
+          "qt-uri-protocols": [
+            "https"
+          ],
+          "qt-uri-extensions": [
+            ".jpg"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "id",
+        "image",
+        "resultType",
+        "title"
+      ],
+      "title": "Result"
+    },
+    "Type": {
+      "type": "string",
+      "enum": [
+        "Title"
+      ],
+      "title": "Type"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Top250Shows",
+  "definitions": {
+    "Top250Shows": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        },
+        "errorMessage": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "errorMessage",
+        "items"
+      ],
+      "title": "Top250Shows"
+    },
+    "Item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "rank": {
+          "type": "string",
+          "format": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "fullTitle": {
+          "type": "string"
+        },
+        "year": {
+          "type": "string",
+          "format": "integer"
+        },
+        "image": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": [
+            "https"
+          ],
+          "qt-uri-extensions": [
+            ".jpg"
+          ]
+        },
+        "crew": {
+          "type": "string"
+        },
+        "imDbRating": {
+          "type": "string"
+        },
+        "imDbRatingCount": {
+          "type": "string",
+          "format": "integer"
+        }
+      },
+      "required": [
+        "crew",
+        "fullTitle",
+        "id",
+        "imDbRating",
+        "imDbRatingCount",
+        "image",
+        "rank",
+        "title",
+        "year"
+      ],
+      "title": "Item"
+    }
+  }
+}

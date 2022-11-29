@@ -1,0 +1,72 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Nowshowing",
+  "definitions": {
+    "Nowshowing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Item"
+          }
+        },
+        "errorMessage": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "errorMessage",
+        "items"
+      ],
+      "title": "Nowshowing"
+    },
+    "Item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "rank": {
+          "type": "string",
+          "format": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": [
+            "https"
+          ],
+          "qt-uri-extensions": [
+            ".jpg"
+          ]
+        },
+        "weekend": {
+          "type": "string"
+        },
+        "gross": {
+          "type": "string"
+        },
+        "weeks": {
+          "type": "string",
+          "format": "integer"
+        }
+      },
+      "required": [
+        "gross",
+        "id",
+        "image",
+        "rank",
+        "title",
+        "weekend",
+        "weeks"
+      ],
+      "title": "Item"
+    }
+  }
+}
