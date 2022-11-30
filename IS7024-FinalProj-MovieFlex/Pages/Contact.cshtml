@@ -65,11 +65,24 @@
                 </div>
                 <!--Grid row-->
 
-            </form>
+            
             <div class="text-center text-md-left">
-                <a class="btn btn-primary mb-3 contact-submit-btn" onclick="document.getElementById('contact-form').submit();">Send</a>
+                        <button class="btn btn-primary mb-3 contact-submit-btn" type="submit" onclick="feedbackFormSubmit()">Send</button>
             </div>
-            <div class="status"></div>
+                </form>
+
+                <script>
+                    function feedbackFormSubmit(event) {
+                        event.preventDefault();
+                        const data = new FormData(event.target);
+                        const formJSON = Object.fromEntries(data.entries());
+                        const results = document.querySelector('.form-result');
+                        results.innerText = JSON.stringify(formJSON, null, 2);
+                    }
+                    const form = document.querySelector('#contact-form');
+                    form.addEventListener('submit', feedbackFormSubmit);
+                </script>
+            <div class="form-result"></div>
         </div>
         <!--Grid column-->
         <!--Grid column-->
